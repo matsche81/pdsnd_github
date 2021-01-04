@@ -15,5 +15,19 @@ washington.csv
 chicago.csv
 new-york-city.csv
 
+These files have the following columns:
+
+Start Time (e.g., 2017-01-01 00:07:57)
+End Time (e.g., 2017-01-01 00:20:53)
+Trip Duration (in seconds - e.g., 776)
+Start Station (e.g., Broadway & Barry Ave)
+End Station (e.g., Sedgwick St & North Ave)
+User Type (Subscriber or Customer)
+
+The Chicago and New York City files also have the following two columns:
+
+Gender
+Birth Year
+
 ### Credits
 no yet
