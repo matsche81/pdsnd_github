@@ -170,7 +170,6 @@ def user_statistics(df):
     user_types = df['User Type'].value_counts()
     print('Count of user types: \n', user_types)
     
-    # Instead with if-statement you can solve this problem also with try/except statement
     if set(['Gender','Birth Year']).issubset(df.columns):
         # Display counts of gender
         gender = df['Gender'].value_counts()
