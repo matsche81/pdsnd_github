@@ -1,6 +1,10 @@
+# import necessary modules
+
 import time
 import pandas as pd
 import numpy as np
+
+# define global variables
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -12,6 +16,7 @@ daylist = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', '
 
 citylist = ['new york city', 'washington', 'chicago']
 
+# define functions
 
 def get_filters():
     """
