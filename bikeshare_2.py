@@ -160,7 +160,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def user_statistics(df):
     """Displays statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
@@ -169,7 +169,8 @@ def user_stats(df):
     # Display counts of user types
     user_types = df['User Type'].value_counts()
     print('Count of user types: \n', user_types)
-
+    
+    # Instead with if-statement you can solve this problem also with try/except statement
     if set(['Gender','Birth Year']).issubset(df.columns):
         # Display counts of gender
         gender = df['Gender'].value_counts()
@@ -213,7 +214,7 @@ def main():
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
-        user_stats(df)
+        user_statistics(df)
         display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
